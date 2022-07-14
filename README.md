@@ -4,6 +4,4 @@
 
 2) run `git clone git@github.com:hetrick/dotfiles.git ./.dotfiles`
 
-3) [install homebrew](https://docs.brew.sh/Installation)
-
-4) run `bootstrap.sh`
+3) run `bootstrap.sh`
