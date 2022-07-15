@@ -41,13 +41,14 @@ ln -s $HOME/.dotfiles/.p10k.zsh $HOME/.p10k.zsh
 rm -rf $HOME/.vscode
 ln -s $HOME/.dotfiles/.vscode $HOME/.vscode
 
-# pretty_print "setting up python environment..."
-# source .python
+pretty_print "setting up python environment..."
+source .python
 
-# pretty_print "setting up vs code..."
-# ln -s $HOME/.dotfiles/.vscode-settings.json $HOME/Library/Application\ Support/Code/User/settings.json
-# source .vscode-extensions
+pretty_print "setting up vs code..."
+ln -s $HOME/.dotfiles/.vscode-settings.json $HOME/Library/Application\ Support/Code/User/settings.json
+source .vscode-extensions
 
+### disabled until dockutil supports OSX Monterey
 # pretty_print "setting up dock..."
 # source .dock
 
