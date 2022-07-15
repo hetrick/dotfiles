@@ -39,6 +39,10 @@ ln -s $HOME/.dotfiles/.p10k.zsh $HOME/.p10k.zsh
 
 pretty_print "setting up python environment..."
 source .python
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
+echo 'command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
+echo 'eval "$(pyenv init -)"' >> ~/.zshrc
+eval "$(pyenv virtualenv-init -)"
 
 pretty_print "setting up vs code..."
 ln -s $HOME/.dotfiles/.vscode-settings.json $HOME/Library/Application\ Support/Code/User/settings.json

@@ -12,8 +12,12 @@ source /opt/homebrew/opt/powerlevel10k/powerlevel10k.zsh-theme
 
 export WORKON_HOME=~/.ve
 export PROJECT_HOME=~/workspace
-eval "$(pyenv init -)"
+
 eval "$(pyenv virtualenv-init -)"
 
-# Created by `pipx` on 2022-05-05 12:56:46
-export PATH="$PATH:/Users/noah.hetrick/.local/bin"
+
+# Created by `pipx` on 2022-07-15 18:44:43
+export PATH="$PATH:/Users/noahhetrick/.local/bin"
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
