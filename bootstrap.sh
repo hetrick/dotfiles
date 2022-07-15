@@ -17,6 +17,8 @@ else
 fi
 
 pretty_print "brewing up some installs..."
+brew update
+brew tap homebrew/bundle
 brew bundle --file $HOME/.dotfiles/Brewfile
 
 # install zsh theme
