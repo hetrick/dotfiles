@@ -26,7 +26,7 @@ brew bundle --file $HOME/.dotfiles/Brewfile
 
 # install zsh theme
 brew install romkatv/powerlevel10k/powerlevel10k
-echo "source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme" >>~/.zshrc
+echo "source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme" >> ~/.zshrc
 
 pretty_print "symlinking some dotfiles..."
 # remove (if necessary) and symlink .zshrc from .dotfiles
