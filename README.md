@@ -4,4 +4,6 @@
 
 2) run `git clone git@github.com:hetrick/dotfiles.git ./.dotfiles`
 
-3) run `bootstrap.sh`
+3) run `chmod +x .dotfiles/bootstrap.sh && .dotfiles/bootstrap.sh`
+
+> note: edit files (.macos, .gitconfig) before running on work machine
