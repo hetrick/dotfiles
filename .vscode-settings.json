@@ -1,0 +1,33 @@
+{
+    "workbench.colorTheme": "Gruvbox Dark Soft",
+    "workbench.settings.editor": "json",
+    "workbench.settings.openDefaultSettings": true,
+    "editor.fontFamily": "Hack Nerd Font, Menlo, monospace",
+    "editor.fontSize": 13,
+    "workbench.sideBar.location": "left",
+    "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": true,
+    "terminal.integrated.scrollback": 100000,
+    "workbench.startupEditor": "newUntitledFile",
+    "terminal.integrated.shell.osx": "/bin/zsh",
+    "terminal.integrated.copyOnSelection": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "files.autoSave": "off",
+    "editor.renderWhitespace": "all",
+    "editor.scrollBeyondLastLine": false,
+    "editor.renderLineHighlight": "gutter",
+    "editor.quickSuggestionsDelay": 10000,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs":"active",
+    "sonarlint.ls.javaHome": "/Users/noah.hetrick/.vscode/extensions/sonarsource.sonarlint_managed-jre/jre/jdk-11.0.9.1+1-jre/Contents/Home",
+    "python.showStartPage": false,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "redhat.telemetry.enabled": false,
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "workbench.iconTheme": "gruvbox-material-icon-theme"
+}

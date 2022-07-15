@@ -16,17 +16,33 @@ else
   pretty_print "homebrew is already installed!"
 fi
 
+# install all the things!
+brew bundle --file $HOME/.dotfiles/Brewfile
+
+# install zsh theme
+brew install romkatv/powerlevel10k/powerlevel10k
+
 # remove (if necessary) and symlink .zshrc from .dotfiles
 rm -rf $HOME/.zshrc
 ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
 
-# install all the things!
-brew bundle --file $HOME/.dotfiles/Brewfile
+# remove (if necessary) and symlink .p10k.zsh from .dotfiles
+rm -rf $HOME/./.p10k.zsh
+ln -s $HOME/.dotfiles/.p10k.zsh $HOME/.p10k.zsh
 
 # remove (if necessary) and symlink .vscode from .dotfiles
 rm -rf $HOME/.vscode
 ln -s $HOME/.dotfiles/.vscode $HOME/.vscode
 
+echo "setting up python environment..."
 source .python
+
+echo "setting up vs code..."
+ln -s $HOME/.dotfiles/.vscode-settings.json $HOME/Library/Application\ Support/Code/User/settings.json
+source .vscode-extensions
+
+echo "setting up dock..."
 source .dock
+
+echo "applying macOS defaults..."
 source .macos
