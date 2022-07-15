@@ -6,6 +6,7 @@ tap "homebrew/core"
 
 cask "font-hack-nerd-font"
 cask "iterm2"
+brew "dockutil"
 brew "pipx"
 brew "pyenv"
 brew "pyenv-virtualenv"
