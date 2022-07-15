@@ -123,10 +123,6 @@ defaults write com.apple.finder WarnOnEmptyTrash -bool false
 # Dock, Dashboard, and hot corners                                            #
 ###############################################################################
 
-##### remove
-# Enable highlight hover effect for the grid view of a stack (Dock)
-defaults write com.apple.dock mouse-over-hilite-stack -bool false
-
 # Set the icon size of Dock items
 defaults write com.apple.dock tilesize -int 24
 
@@ -135,10 +131,6 @@ defaults write com.apple.dock mineffect -string "scale"
 
 # Minimize windows into their application’s icon
 defaults write com.apple.dock minimize-to-application -bool true
-
-##### remove
-# Enable spring loading for all Dock items
-defaults write com.apple.dock enable-spring-load-actions-on-all-items -bool false
 
 # Show indicator lights for open applications in the Dock
 defaults write com.apple.dock show-process-indicators -bool true
