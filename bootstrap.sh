@@ -43,9 +43,9 @@ ln -s $HOME/.dotfiles/.vscode $HOME/.vscode
 # pretty_print "setting up python environment..."
 # source .python
 
-pretty_print "setting up vs code..."
+# pretty_print "setting up vs code..."
 # ln -s $HOME/.dotfiles/.vscode-settings.json $HOME/Library/Application\ Support/Code/User/settings.json
-source .vscode-extensions
+# source .vscode-extensions
 
 pretty_print "setting up dock..."
 source .dock
