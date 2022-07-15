@@ -16,7 +16,7 @@ else
   pretty_print "homebrew is already installed!"
 fi
 
-# install all the things!
+pretty_print "brewing up some installs..."
 brew bundle --file $HOME/.dotfiles/Brewfile
 
 # install zsh theme
@@ -34,15 +34,15 @@ ln -s $HOME/.dotfiles/.p10k.zsh $HOME/.p10k.zsh
 rm -rf $HOME/.vscode
 ln -s $HOME/.dotfiles/.vscode $HOME/.vscode
 
-echo "setting up python environment..."
+pretty_print "setting up python environment..."
 source .python
 
-echo "setting up vs code..."
+pretty_print "setting up vs code..."
 ln -s $HOME/.dotfiles/.vscode-settings.json $HOME/Library/Application\ Support/Code/User/settings.json
 source .vscode-extensions
 
-echo "setting up dock..."
+pretty_print "setting up dock..."
 source .dock
 
-echo "applying macOS defaults..."
+pretty_print "applying macOS defaults..."
 source .macos
