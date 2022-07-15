@@ -47,8 +47,8 @@ ln -s $HOME/.dotfiles/.vscode $HOME/.vscode
 # ln -s $HOME/.dotfiles/.vscode-settings.json $HOME/Library/Application\ Support/Code/User/settings.json
 # source .vscode-extensions
 
-pretty_print "setting up dock..."
-source .dock
+# pretty_print "setting up dock..."
+# source .dock
 
 pretty_print "applying macOS defaults..."
 source .macos
