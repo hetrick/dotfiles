@@ -26,6 +26,7 @@ brew bundle --file $HOME/.dotfiles/Brewfile
 
 # install zsh theme
 brew install romkatv/powerlevel10k/powerlevel10k
+echo "source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme" >>~/.zshrc
 
 pretty_print "symlinking some dotfiles..."
 # remove (if necessary) and symlink .zshrc from .dotfiles
@@ -50,10 +51,5 @@ ln -s $HOME/.dotfiles/.vscode $HOME/.vscode
 # pretty_print "setting up dock..."
 # source .dock
 
-pretty_print "applying macOS defaults..."
+pretty_print "finally, applying macOS defaults..."
 source .macos
-
-pretty_print "setting chrome as default browser..."
-open /Applications/Google Chrome.app/ -setDefaultBrowser
-
-pretty_print "...all done bootsrapping your mac!"
