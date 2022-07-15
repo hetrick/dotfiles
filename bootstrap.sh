@@ -16,6 +16,9 @@ else
   pretty_print "homebrew is already installed!"
 fi
 
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 pretty_print "brewing up some installs..."
 brew update
 brew tap homebrew/bundle
