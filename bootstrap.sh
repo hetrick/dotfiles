@@ -37,10 +37,6 @@ ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
 rm -rf $HOME/./.p10k.zsh
 ln -s $HOME/.dotfiles/.p10k.zsh $HOME/.p10k.zsh
 
-# remove (if necessary) and symlink .vscode from .dotfiles
-rm -rf $HOME/.vscode
-ln -s $HOME/.dotfiles/.vscode $HOME/.vscode
-
 pretty_print "setting up python environment..."
 source .python
 
