@@ -30,5 +30,6 @@
         "jupyter-notebook": "left"
     },
     "workbench.iconTheme": "gruvbox-material-icon-theme",
+    "explorer.confirmDelete": false,
     "window.zoomLevel": -1
 }
