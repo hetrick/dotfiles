@@ -38,15 +38,16 @@ rm -rf $HOME/.p10k.zsh
 ln -s $HOME/.dotfiles/.p10k.zsh $HOME/.p10k.zsh
 
 pretty_print "setting up python environment..."
-source .python
+source $HOME/.dotfiles/.python
 echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
 echo 'command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
 echo 'eval "$(pyenv init -)"' >> ~/.zshrc
 eval "$(pyenv virtualenv-init -)"
 
 pretty_print "setting up vs code..."
+rm -rf $HOME/Library/Application\ Support/Code/User/settings.json
 ln -s $HOME/.dotfiles/.vscode-settings.json $HOME/Library/Application\ Support/Code/User/settings.json
-source .vscode-extensions
+source $HOME/.dotfiles/.vscode-extensions
 
 pretty_print "setting up gitconfig..."
 rm -rf $HOME/.gitconfig
@@ -57,4 +58,4 @@ ln -s $HOME/.dotfiles/.gitconfig $HOME/.gitconfig
 # source .dock
 
 pretty_print "finally, applying macOS defaults..."
-source .macos
+source $HOME/.dotfiles/.macos
