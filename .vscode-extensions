@@ -15,3 +15,5 @@ code --install-extension ms-python.vscode-pylance
 code --install-extension ms-toolsai.jupyter
 code --install-extension octref.vetur
 code --install-extension redhat.vscode-yaml
+
+code --install-extension GitHub.vscode-pull-request-github
