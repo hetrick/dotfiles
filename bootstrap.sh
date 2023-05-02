@@ -53,9 +53,5 @@ pretty_print "setting up gitconfig..."
 rm -rf $HOME/.gitconfig
 ln -s $HOME/.dotfiles/.gitconfig $HOME/.gitconfig
 
-### disabled until dockutil supports OSX Monterey
-# pretty_print "setting up dock..."
-# source .dock
-
 pretty_print "finally, applying macOS defaults..."
 source $HOME/.dotfiles/.macos
