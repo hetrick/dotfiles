@@ -11,7 +11,7 @@ pretty_print "bootstrapping your MacBook..."
 # if not already installed, install homebrew
 if ! command -v brew &>/dev/null; then
   pretty_print "installing homebrew..."
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 else
   pretty_print "Homebrew is already installed!"
 fi
