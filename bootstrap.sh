@@ -26,9 +26,9 @@ brew bundle --file $HOME/.dotfiles/Brewfile
 
 pretty_print "configuring zsh..."
 # remove (if necessary) and symlink .zshrc from .dotfiles
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 rm -rf $HOME/.zshrc
 ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 pretty_print "setting up Python environment..."
 source $HOME/.dotfiles/.python
