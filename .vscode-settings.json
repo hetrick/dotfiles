@@ -11,6 +11,9 @@
     "workbench.startupEditor": "newUntitledFile",
     "terminal.integrated.shell.osx": "/bin/zsh",
     "terminal.integrated.copyOnSelection": true,
+    "terminal.integrated.cursorBlinking": "smooth",
+    "terminal.integrated.cursorStyle": "underline",
+    "terminal.integrated.cursorStyleInactive": "none",
     "diffEditor.ignoreTrimWhitespace": false,
     "files.autoSave": "off",
     "editor.renderWhitespace": "all",
@@ -19,17 +22,18 @@
     "editor.quickSuggestionsDelay": 10000,
     "editor.bracketPairColorization.enabled": true,
     "editor.guides.bracketPairs":"active",
-    "sonarlint.ls.javaHome": "/Users/noah.hetrick/.vscode/extensions/sonarsource.sonarlint_managed-jre/jre/jdk-11.0.9.1+1-jre/Contents/Home",
-    "python.showStartPage": false,
-    "workbench.editorAssociations": {
-        "*.ipynb": "jupyter-notebook"
-    },
-    "redhat.telemetry.enabled": false,
-    "notebook.cellToolbarLocation": {
-        "default": "right",
-        "jupyter-notebook": "left"
-    },
     "workbench.iconTheme": "gruvbox-material-icon-theme",
     "explorer.confirmDelete": false,
-    "window.zoomLevel": -1
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "githubPullRequests.pullBranch": "never",
+    "extensions.ignoreRecommendations": true,
+    "githubPullRequests.terminalLinksHandler": "github",
+    "git.openRepositoryInParentFolders": "never",
+    "python.createEnvironment.trigger": "off",
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "go.toolsManagement.autoUpdate": true
 }
