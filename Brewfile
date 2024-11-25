@@ -1,9 +1,3 @@
-tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/cask-drivers"
-tap "homebrew/cask-fonts"
-tap "homebrew/core"
-
 cask "font-hack-nerd-font"
 brew "pipx"
 brew "pyenv"
