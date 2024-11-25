@@ -118,7 +118,9 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/noah.hetrick/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/noah.hetrick/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '/Users/noahhetrick/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/noahhetrick/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/Users/noah.hetrick/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/noah.hetrick/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f '/Users/noahhetrick/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/noahhetrick/google-cloud-sdk/completion.zsh.inc'; fi
+
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
