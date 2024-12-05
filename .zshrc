@@ -109,8 +109,8 @@ eval "$(pyenv virtualenv-init -)"
 
 eval $(thefuck --alias)
 
-alias geostore="cd ~/go/src/github.com/onXmaps/geostore"
-alias datastore="cd ~/onXmaps/datastore"
+alias geostore="cd ~/go/src/github.com/onxmaps/geostore"
+alias datastore="cd ~/onxmaps/datastore"
 alias lc="docker ps -a"
 
 export NVM_DIR="$HOME/.nvm"
@@ -124,3 +124,7 @@ if [ -f '/Users/noahhetrick/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/noa
 if [ -f '/Users/noahhetrick/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/noahhetrick/google-cloud-sdk/completion.zsh.inc'; fi
 
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
